@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
@@ -17,9 +19,11 @@ export default function Home() {
             <button className="text-gray-700 hover:text-primary-600 transition-colors">
               Pricing
             </button>
-            <button className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors">
-              Get Started Free
-            </button>
+            <Link href="/login">
+              <button className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors">
+                Get Started Free
+              </button>
+            </Link>
           </div>
         </nav>
       </header>
